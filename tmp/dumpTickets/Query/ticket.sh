@@ -39,7 +39,7 @@ date +%d/%m/%y-%kh%M
 rm -rf ./tmp/dumpTickets/tickets_appels
 
 #SAUVEGARDE de la date de fin
-/usr/bin/mysql --host=mysql3.yulpa.io --user=145852_hervegac --password=5dbUYZqDNUvEvhCK --database=gactechnology<<EOFMYSQL
+/usr/bin/mysql --host=mysql3.yulpa.io --user=145852_hervegac --password=5dbUYZqDNUvEvhCK --database=145852_gactechnology<<EOFMYSQL
 UPDATE date_maj_dump SET dmd_date_finish=NOW() ORDER BY dmd_id DESC LIMIT 1;
 EOFMYSQL
 
